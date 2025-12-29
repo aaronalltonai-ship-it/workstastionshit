@@ -1,0 +1,51 @@
+
+> online-store@0.1.0 dev
+> next dev -p 5000
+
+▲ Next.js 16.1.0 (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://192.168.0.195:5000
+- Environments: .env.local, .env
+
+✓ Starting...
+✓ Ready in 1271ms
+ GET / 200 in 725ms (compile: 269ms, render: 456ms)
+ GET / 200 in 411ms (compile: 10ms, render: 401ms)
+ GET /api/db/health 200 in 396ms (compile: 256ms, render: 140ms)
+ GET /api/dashboard 200 in 411ms (compile: 362ms, render: 49ms)
+ POST /api/groq-compound 200 in 698ms (compile: 52ms, render: 647ms)
+ POST /api/log 200 in 74ms (compile: 60ms, render: 15ms)
+ GET /api/dashboard 200 in 12ms (compile: 4ms, render: 7ms)
+ GET /api/db/health 200 in 9ms (compile: 3ms, render: 6ms)
+ POST /api/e2b/run 200 in 6.1s (compile: 275ms, render: 5.9s)
+ POST /api/log 200 in 16ms (compile: 4ms, render: 12ms)
+ GET /api/db/health 200 in 12ms (compile: 4ms, render: 8ms)
+ POST /api/groq-compound 200 in 497ms (compile: 3ms, render: 494ms)
+ POST /api/log 200 in 11ms (compile: 2ms, render: 8ms)
+ POST /api/groq-compound 200 in 462ms (compile: 3ms, render: 459ms)
+ POST /api/log 200 in 11ms (compile: 4ms, render: 8ms)
+ GET / 200 in 370ms (compile: 11ms, render: 359ms)
+ GET /api/db/health 200 in 33ms (compile: 21ms, render: 12ms)
+ GET /api/dashboard 200 in 47ms (compile: 8ms, render: 40ms)
+ GET / 200 in 131ms (compile: 4ms, render: 127ms)
+ GET /api/dashboard 200 in 27ms (compile: 8ms, render: 19ms)
+ GET /api/db/health 200 in 8ms (compile: 4ms, render: 4ms)
+ POST /api/groq-compound 200 in 353ms (compile: 3ms, render: 350ms)
+ GET /api/db/health 200 in 9ms (compile: 3ms, render: 6ms)
+ GET /api/db/health 200 in 8ms (compile: 4ms, render: 4ms)
+ GET /api/dashboard 200 in 15ms (compile: 4ms, render: 11ms)
+ GET /api/db/health 200 in 11ms (compile: 6ms, render: 5ms)
+ POST /api/groq-compound 200 in 815ms (compile: 3ms, render: 812ms)
+ POST /api/groq-compound 200 in 516ms (compile: 3ms, render: 513ms)
+ GET /api/db/health 200 in 12ms (compile: 5ms, render: 7ms)
+ POST /api/groq-compound 200 in 432ms (compile: 13ms, render: 419ms)
+ POST /api/groq-compound 200 in 903ms (compile: 3ms, render: 900ms)
+ POST /api/groq-compound 200 in 548ms (compile: 4ms, render: 544ms)
+ POST /api/groq-compound 200 in 819ms (compile: 3ms, render: 816ms)
+ POST /api/groq-compound 200 in 671ms (compile: 5ms, render: 666ms)
+ POST /api/groq-compound 200 in 1015ms (compile: 3ms, render: 1012ms)
+ POST /api/groq-compound 200 in 1149ms (compile: 2ms, render: 1147ms)
+ POST /api/groq-compound 200 in 602ms (compile: 6ms, render: 596ms)
+ POST /api/groq-compound 200 in 891ms (compile: 4ms, render: 887ms)
+ GET /api/db/health 200 in 9ms (compile: 3ms, render: 6ms)
+ GET /api/db/health 200 in 9ms (compile: 3ms, render: 6ms)

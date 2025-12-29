@@ -1,0 +1,90 @@
+t=2025-12-29T00:35:53-0800 lvl=info msg="no configuration paths supplied"
+t=2025-12-29T00:35:53-0800 lvl=info msg="using configuration at default config path" path=C:\\Users\\iLL-A\\AppData\\Local/ngrok/ngrok.yml
+t=2025-12-29T00:35:53-0800 lvl=info msg="open config file" path=C:\\Users\\iLL-A\\AppData\\Local\\ngrok\\ngrok.yml err=nil
+t=2025-12-29T00:35:53-0800 lvl=info msg="FIPS 140 mode" enabled=false
+t=2025-12-29T00:35:53-0800 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2025-12-29T00:35:54-0800 lvl=info msg="client session established" obj=tunnels.session
+t=2025-12-29T00:35:54-0800 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2025-12-29T00:35:54-0800 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:3000 url=https://448febf93367.ngrok-free.app
+t=2025-12-29T00:36:17-0800 lvl=info msg=start pg=/api/tunnels id=3caca67b3a77b828
+t=2025-12-29T00:36:17-0800 lvl=info msg=end pg=/api/tunnels id=3caca67b3a77b828 status=200 dur=0s
+t=2025-12-29T00:36:52-0800 lvl=info msg=start pg=/ id=bbabb8fe49c71b4a
+t=2025-12-29T00:36:52-0800 lvl=info msg=end pg=/ id=bbabb8fe49c71b4a status=302 dur=0s
+t=2025-12-29T00:36:52-0800 lvl=info msg=start pg=/inspect/http id=5fd828424425a9fd
+t=2025-12-29T00:36:52-0800 lvl=info msg=end pg=/inspect/http id=5fd828424425a9fd status=200 dur=508.6µs
+t=2025-12-29T00:36:52-0800 lvl=info msg=start pg=/static/js/app.IDyMPwcw.js id=7bdbe32b95186097
+t=2025-12-29T00:36:52-0800 lvl=info msg=start pg=/static/css/app.DttJnHmJ.css id=37b626e67c3b425a
+t=2025-12-29T00:36:52-0800 lvl=info msg=end pg=/static/css/app.DttJnHmJ.css id=37b626e67c3b425a status=200 dur=126.135ms
+t=2025-12-29T00:36:52-0800 lvl=info msg=end pg=/static/js/app.IDyMPwcw.js id=7bdbe32b95186097 status=200 dur=148.781ms
+t=2025-12-29T00:36:52-0800 lvl=info msg=start pg=/grpc/agent.Web/Preloaded id=d5419a049d811226
+t=2025-12-29T00:36:52-0800 lvl=info msg=end pg=/grpc/agent.Web/Preloaded id=d5419a049d811226 status=200 dur=1.2259ms
+t=2025-12-29T00:36:52-0800 lvl=info msg=start pg=/grpc/agent.Web/State id=2931588405f7855e
+t=2025-12-29T00:36:53-0800 lvl=info msg=start pg=/static/favicon.ico id=4116f74af428b3b7
+t=2025-12-29T00:36:53-0800 lvl=info msg=end pg=/static/favicon.ico id=4116f74af428b3b7 status=200 dur=0s
+t=2025-12-29T00:38:38-0800 lvl=warn msg="failed to open private leg" id=471c6d6c969e privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:38:38-0800 lvl=info msg=start pg=/static/assets/glyphicons-halflings-regular.woff2 id=8aa57df4b308fa05
+t=2025-12-29T00:38:38-0800 lvl=info msg=end pg=/static/assets/glyphicons-halflings-regular.woff2 id=8aa57df4b308fa05 status=404 dur=0s
+t=2025-12-29T00:38:38-0800 lvl=info msg=start pg=/static/assets/glyphicons-halflings-regular.woff id=b62c173710c37c4e
+t=2025-12-29T00:38:38-0800 lvl=info msg=end pg=/static/assets/glyphicons-halflings-regular.woff id=b62c173710c37c4e status=404 dur=0s
+t=2025-12-29T00:38:38-0800 lvl=info msg=start pg=/static/assets/glyphicons-halflings-regular.ttf id=28e3f90c7031b442
+t=2025-12-29T00:38:38-0800 lvl=info msg=end pg=/static/assets/glyphicons-halflings-regular.ttf id=28e3f90c7031b442 status=404 dur=0s
+t=2025-12-29T00:38:42-0800 lvl=warn msg="failed to open private leg" id=a8df37e02641 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:38:43-0800 lvl=warn msg="failed to open private leg" id=09f823439edf privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:38:45-0800 lvl=warn msg="failed to open private leg" id=63105f18401d privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:38:49-0800 lvl=warn msg="failed to open private leg" id=9f6a668d77a8 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:39:01-0800 lvl=warn msg="failed to open private leg" id=c321441596ba privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:39:13-0800 lvl=warn msg="failed to open private leg" id=66fde79cece3 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:39:16-0800 lvl=warn msg="failed to open private leg" id=c3346bfa46df privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:40:15-0800 lvl=info msg=start pg=/ id=f937ca05d2aa64b8
+t=2025-12-29T00:40:15-0800 lvl=info msg=end pg=/ id=f937ca05d2aa64b8 status=302 dur=0s
+t=2025-12-29T00:40:15-0800 lvl=info msg=start pg=/inspect/http id=072729b868cd66a0
+t=2025-12-29T00:40:15-0800 lvl=info msg=end pg=/inspect/http id=072729b868cd66a0 status=200 dur=0s
+t=2025-12-29T00:40:15-0800 lvl=info msg=start pg=/static/css/app.DttJnHmJ.css id=08d1efa46a43f074
+t=2025-12-29T00:40:15-0800 lvl=info msg=end pg=/static/css/app.DttJnHmJ.css id=08d1efa46a43f074 status=304 dur=0s
+t=2025-12-29T00:40:15-0800 lvl=info msg=start pg=/static/js/app.IDyMPwcw.js id=562a0110d3aff330
+t=2025-12-29T00:40:15-0800 lvl=info msg=end pg=/static/js/app.IDyMPwcw.js id=562a0110d3aff330 status=304 dur=1.512ms
+t=2025-12-29T00:40:15-0800 lvl=info msg=start pg=/grpc/agent.Web/Preloaded id=286d93da645ba763
+t=2025-12-29T00:40:15-0800 lvl=info msg=end pg=/grpc/agent.Web/Preloaded id=286d93da645ba763 status=200 dur=1.0618ms
+t=2025-12-29T00:40:15-0800 lvl=info msg=start pg=/grpc/agent.Web/State id=6d8fc155c321e248
+t=2025-12-29T00:40:16-0800 lvl=info msg=start pg=/static/assets/glyphicons-halflings-regular.woff2 id=461ef83ef8427555
+t=2025-12-29T00:40:16-0800 lvl=info msg=end pg=/static/assets/glyphicons-halflings-regular.woff2 id=461ef83ef8427555 status=404 dur=0s
+t=2025-12-29T00:40:16-0800 lvl=info msg=start pg=/static/assets/glyphicons-halflings-regular.woff id=0ead721a55949541
+t=2025-12-29T00:40:16-0800 lvl=info msg=end pg=/static/assets/glyphicons-halflings-regular.woff id=0ead721a55949541 status=404 dur=998.7µs
+t=2025-12-29T00:40:16-0800 lvl=info msg=start pg=/static/assets/glyphicons-halflings-regular.ttf id=6492d03a523b5140
+t=2025-12-29T00:40:16-0800 lvl=info msg=end pg=/static/assets/glyphicons-halflings-regular.ttf id=6492d03a523b5140 status=404 dur=999.2µs
+t=2025-12-29T00:41:44-0800 lvl=warn msg="failed to open private leg" id=bc905510469b privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:41:49-0800 lvl=warn msg="failed to open private leg" id=1a2a1d577b97 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:41:50-0800 lvl=warn msg="failed to open private leg" id=0ba897baf308 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:42:42-0800 lvl=warn msg="failed to open private leg" id=072398f9722b privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:42:48-0800 lvl=warn msg="failed to open private leg" id=ebbfa1e2d8ae privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:43:10-0800 lvl=warn msg="failed to open private leg" id=2d3eaa5c342f privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:43:18-0800 lvl=warn msg="failed to open private leg" id=2b2d6ecac343 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:43:20-0800 lvl=warn msg="failed to open private leg" id=e40cb10271b7 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:48:40-0800 lvl=warn msg="failed to open private leg" id=952cb4d0ff5d privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:48:41-0800 lvl=warn msg="failed to open private leg" id=fbe5a99361c4 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:48:41-0800 lvl=warn msg="failed to open private leg" id=4afc19e48678 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:52:19-0800 lvl=warn msg="failed to open private leg" id=177085dabd01 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:55:14-0800 lvl=warn msg="failed to open private leg" id=b7575694c3b5 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:55:22-0800 lvl=warn msg="failed to open private leg" id=a9a35e3aecd3 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:55:26-0800 lvl=warn msg="failed to open private leg" id=0d5bbf4568f6 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:56:32-0800 lvl=warn msg="failed to open private leg" id=5feb3a194ced privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:56:36-0800 lvl=warn msg="failed to open private leg" id=f36a0d272c7f privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:58:19-0800 lvl=warn msg="failed to open private leg" id=188a9871654b privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:58:24-0800 lvl=warn msg="failed to open private leg" id=2813e5125d3a privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T00:58:27-0800 lvl=warn msg="failed to open private leg" id=fca750cffe37 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:02:09-0800 lvl=warn msg="failed to open private leg" id=85136f3eea03 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:05:00-0800 lvl=warn msg="failed to open private leg" id=98537b4b6b3d privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:05:00-0800 lvl=warn msg="failed to open private leg" id=10abee5f7e07 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:05:01-0800 lvl=warn msg="failed to open private leg" id=def728134f51 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:07:04-0800 lvl=warn msg="failed to open private leg" id=2a682b7a534b privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:07:04-0800 lvl=warn msg="failed to open private leg" id=19e4c6189dad privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:07:05-0800 lvl=warn msg="failed to open private leg" id=1b6771d149d1 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:07:36-0800 lvl=warn msg="failed to open private leg" id=afa2de5ea68b privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:15:52-0800 lvl=warn msg="failed to open private leg" id=796767942325 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:16:42-0800 lvl=warn msg="failed to open private leg" id=ca983702ae29 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:16:43-0800 lvl=warn msg="failed to open private leg" id=9ac572ea77ab privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:16:44-0800 lvl=warn msg="failed to open private leg" id=238d2a9c1a2a privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:16:44-0800 lvl=warn msg="failed to open private leg" id=643efc8d1a60 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:16:44-0800 lvl=warn msg="failed to open private leg" id=bfe0d4dadca5 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:16:45-0800 lvl=warn msg="failed to open private leg" id=a568bf6900a8 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."
+t=2025-12-29T01:16:45-0800 lvl=warn msg="failed to open private leg" id=dad720191b84 privaddr=localhost:3000 err="dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it."

@@ -1,0 +1,148 @@
+1️⃣ MASTER VISUAL SYSTEM DIAGRAM (TEXT / COMPANY OS)
+
+CLIENT / USER
+     │
+     ▼
+┌─────────────────────────────┐
+│  AI INTAKE (WEB / APP)      │
+│  Forms • Chat • Uploads     │
+└────────────┬────────────────┘
+             ▼
+┌─────────────────────────────┐
+│  ORCHESTRATOR AGENT (CEO)   │
+│  Task Planning • Routing    │
+│  Rules • Budget • Policy    │
+└───────┬─────────┬──────────┘
+        │         │
+        ▼         ▼
+┌────────────┐ ┌──────────────┐
+│ CREATIVE   │ │ TECH / DEV   │
+│ AGENTS     │ │ AGENTS       │
+└────┬───────┘ └────┬─────────┘
+     │                │
+     ▼                ▼
+┌────────────┐  ┌──────────────┐
+│ VIDEO /    │  │ AI TOOLS /   │
+│ MUSIC /    │  │ APPS /       │
+│ COMMERCIAL │  │ AGENTS       │
+└────┬───────┘  └────┬─────────┘
+     ▼                ▼
+┌────────────────────────────────┐
+│ QA • POLICY • MEMORY • SAFETY  │
+│ Watermarks • Consent • Timing  │
+└────────────┬───────────────────┘
+             ▼
+┌─────────────────────────────┐
+│ FINAL DELIVERY              │
+│ Video • App • Music • Site  │
+└─────────────────────────────┘
+
+---
+
+2️⃣ FULL AGENT ROLE MAP (YOUR AI STAFF)
+
+CORE CONTROL
+- Orchestrator Agent – breaks requests into tasks, assigns agents, enforces rules
+- Policy & Safety Agent – watermark rules, real-person rules, consent
+
+VIDEO
+- Video Director Agent – selects model (Sora / Hailuo / Pika), pacing, story
+- Prompt Engineer Agent – compiles prompts + templates
+- Video Assembly Agent – stitches scenes, transitions
+- Lip Sync Agent – time-based vocal alignment (waveform / syllables)
+
+MUSIC & SONGWRITING (HUMAN + AI)
+- Human Songwriter – lyrics, emotion, intent
+- Songwriting AI Agent – rhyme schemes, hook variations
+- Music Structure Agent – tempo, bars, verse/chorus mapping
+- Vocal Analysis Agent – phrasing, emphasis, breath points
+
+AI DEV
+- AI Solutions Architect – figures out what to build vs integrate
+- AI App Builder Agent – builds tools, apps, dashboards
+- Website AI Agent – lives on client websites (sales / support / intake)
+
+BUSINESS
+- Client Intake Agent
+- Pricing Agent
+- Project Manager Agent
+- Delivery Agent
+
+MEMORY / IP
+- Prompt & Template Agent
+- Client Memory Agent
+
+---
+
+3️⃣ HUMAN vs AI RESPONSIBILITY MAP
+
+HUMAN-ONLY
+- Final creative approval
+- Songwriting intent & emotion
+- Business decisions
+- Ethical judgment
+
+AI-ONLY
+- Prompt generation
+- Scene assembly
+- Lip sync timing math
+- Draft visuals
+- Data analysis
+
+HYBRID (BEST ZONE)
+- Songwriting (human writes, AI assists)
+- Video direction
+- AI solution design
+- Client strategy
+
+---
+
+4️⃣ SINGLE CONTROL DASHBOARD (WHAT YOU SEE)
+
+Tabs in ONE interface:
+- Projects
+- Agents (on/off, logs)
+- Templates & Prompts
+- Music & Lyrics
+- Memory (clients + IP)
+- Policy & Safety
+- Analytics & Costs
+- Deployment
+
+This is your mission control.
+
+---
+
+5️⃣ BUILD vs BUY DECISION LIST
+
+BUILD (YOUR MOAT)
+- Orchestrator
+- Prompt & template systems
+- Video pipelines
+- Songwriting algorithms
+- Policy enforcement
+- Agent logic
+
+BUY / INTEGRATE
+- Base LLM APIs
+- Cloud GPUs
+- Storage
+- Payment systems
+
+NEVER RELY ON
+- Third-party “AI studios”
+- Black-box agents
+- One-model workflows
+
+---
+
+FINAL INTERNAL STATEMENT
+"We operate a human-guided, multi-agent AI company that creates music, video, software, and AI solutions using proprietary systems."
+
+---
+
+NEXT OPTIONS (AUTO-RECOMMENDED)
+6) Agent SOPs (exact instructions per agent)
+7) Build checklist (tech stack + order)
+8) Investor / partner deck
+9) Turn this into SaaS products

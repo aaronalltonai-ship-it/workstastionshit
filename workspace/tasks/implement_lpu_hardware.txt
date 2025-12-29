@@ -1,0 +1,3 @@
+Task: Implement LPU hardware integration
+Status: Todo
+Details: Outline steps to integrate LPU hardware with the agent.

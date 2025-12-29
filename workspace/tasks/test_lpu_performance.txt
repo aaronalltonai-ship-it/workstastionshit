@@ -1,0 +1,3 @@
+Task: Test LPU performance
+Status: Todo
+Details: Define performance benchmarks and testing procedures.

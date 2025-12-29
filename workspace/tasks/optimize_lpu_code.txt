@@ -1,0 +1,3 @@
+Task: Optimize LPU code
+Status: Todo
+Details: Identify bottlenecks and apply optimizations.

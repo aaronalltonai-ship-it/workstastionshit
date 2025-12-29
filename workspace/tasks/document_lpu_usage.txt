@@ -1,0 +1,3 @@
+Task: Document LPU usage
+Status: Todo
+Details: Create documentation for developers on how to use the LPU.

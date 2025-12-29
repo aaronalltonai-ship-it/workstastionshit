@@ -1,0 +1,38 @@
+{
+  "name": "online-store",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NEXT_DISABLE_TURBOPACK=1 next dev",
+    "dev:turbo": "next dev --turbo",
+    "build": "next build",
+    "build:webpack": "cross-env NEXT_DISABLE_TURBOPACK=1 next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:push": "prisma db push",
+    "db:seed": "prisma db seed"
+  },
+  "dependencies": {
+    "@e2b/code-interpreter": "^2.3.3",
+    "@prisma/client": "^5.22.0",
+    "e2b": "^2.8.4",
+    "next": "16.1.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "cross-env": "^10.1.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.0",
+    "prisma": "^5.22.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}

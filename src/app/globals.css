@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --background: #030712;
+  --foreground: #e5e7eb;
+  --font-geist-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-geist-mono: "SFMono-Regular", Menlo, Consolas, monospace;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
+}
+
+body {
+  background: radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.06), transparent 30%),
+    radial-gradient(circle at 80% 0%, rgba(56, 189, 248, 0.06), transparent 30%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans);
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display), var(--font-geist-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(94, 234, 212, 0.35);
+  color: #f8fafc;
+}
+
+.songwriter-grid {
+  display: grid;
+}
+.masterwriter-grid {
+  display: grid;
+}
+.collaboration-grid {
+  display: grid;
+}
+
+@media (max-width: 900px) {
+  .songwriter-grid,
+  .masterwriter-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .songwriter-grid .space-y-3,
+  .masterwriter-grid .space-y-3 {
+    padding: 16px;
+  }
+  .colaboration-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .songwriter-grid,
+  .masterwriter-grid {
+    gap: 12px !important;
+  }
+  .songwriter-grid .space-y-3,
+  .songwriter-grid .rounded-2xl,
+  .masterwriter-grid .rounded-2xl {
+    border-radius: 16px;
+  }
+  .songwriter-grid textarea,
+  .masterwriter-grid textarea {
+    font-size: 0.85rem;
+  }
+  .songwriter-grid .text-xs,
+  .songwriter-grid .text-sm,
+  .masterwriter-grid .text-xs {
+    font-size: 0.7rem !important;
+  }
+}

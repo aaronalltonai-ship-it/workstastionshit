@@ -1,0 +1,61 @@
+{
+  "projects": [
+    {
+      "id": "p-001",
+      "name": "Storefront polish",
+      "client": "Internal",
+      "status": "Active",
+      "owner": "iLL"
+    },
+    {
+      "id": "p-002",
+      "name": "Holiday drop",
+      "client": "Brand",
+      "status": "Planned",
+      "owner": "Cody"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t-001",
+      "title": "Ship hero banner",
+      "project": "Storefront polish",
+      "status": "Doing",
+      "due": "2025-12-24",
+      "owner": "iLL",
+      "timeSpentMs": 0
+    },
+    {
+      "id": "t-002",
+      "title": "QA checkout",
+      "project": "Holiday drop",
+      "status": "Todo",
+      "due": "2025-12-26",
+      "owner": "Bill",
+      "timeSpentMs": 1452
+    },
+    {
+      "id": "t-003",
+      "title": "Catalog sync",
+      "project": "Storefront polish",
+      "status": "Doing",
+      "due": "2025-12-23",
+      "owner": "Ad",
+      "timeSpentMs": 0
+    }
+  ],
+  "notes": [
+    {
+      "id": "n-001",
+      "title": "KPIs",
+      "content": "AOV target 80, CVR 4.5%",
+      "reference": "deck"
+    },
+    {
+      "id": "n-002",
+      "title": "Risks",
+      "content": "Checkout flakiness on Safari",
+      "reference": "qa"
+    }
+  ]
+}

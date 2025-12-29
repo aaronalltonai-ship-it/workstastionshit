@@ -1,0 +1,3 @@
+Task: Debug LPU issues
+Status: Todo
+Details: Log known issues and steps for debugging.
