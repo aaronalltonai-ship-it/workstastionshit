@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>iLLcoAI E2B Console</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #04050b;
+      --panel: rgba(5, 7, 16, 0.95);
+      --border: rgba(255, 255, 255, 0.15);
+      --accent: #22d3ee;
+      --text: #f8fafc;
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #030712, #050a15 60%, #0b111f);
+      color: var(--text);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .container {
+      width:min(1100px, 100%);
+      padding:24px;
+    }
+    .panel {
+      border:1px solid var(--border);
+      border-radius:26px;
+      background: var(--panel);
+      padding:28px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      min-height:600px;
+      box-shadow:0 30px 60px rgba(0,0,0,.5);
+    }
+    .panel header {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+    }
+    .panel header .title {
+      font-size:1.4rem;
+      font-weight:700;
+      letter-spacing:.04em;
+    }
+    .badge {
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.2);
+      padding:8px 12px;
+      font-size:.65rem;
+      letter-spacing:.3em;
+      text-transform:uppercase;
+      color:rgba(248,250,252,.6);
+    }
+    .workspace {
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:18px;
+      flex:1;
+    }
+    .box {
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:16px;
+      background: rgba(255,255,255,.02);
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      min-height:220px;
+    }
+    label {
+      font-size:.75rem;
+      letter-spacing:.3em;
+      text-transform:uppercase;
+      color:rgba(248,250,252,.6);
+    }
+    textarea, select {
+      width:100%;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.15);
+      background: rgba(0,0,0,.45);
+      color:var(--text);
+      padding:12px;
+      font-family:'JetBrains Mono', monospace;
+      font-size:.9rem;
+    }
+    textarea { resize:none; min-height:100px; }
+    .actions {
+      display:flex;
+      justify-content:flex-end;
+      gap:10px;
+    }
+    .actions button {
+      border:none;
+      border-radius:14px;
+      padding:10px 22px;
+      background: rgba(34,197,94,.1);
+      border:1px solid rgba(34,197,94,.4);
+      color:#f8fafc;
+      font-weight:700;
+      cursor:pointer;
+    }
+    .terminal {
+      flex:1;
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:14px;
+      padding:14px;
+      background: #020308;
+      font-family:'JetBrains Mono', monospace;
+      font-size:.85rem;
+      color:#cbd5f5;
+      overflow:auto;
+      line-height:1.4;
+    }
+    .hint {
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      font-size:.75rem;
+      color:rgba(248,250,252,.6);
+    }
+    .hint span {
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:12px;
+      padding:4px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="container">
+    <div class="panel">
+      <header>
+        <div class="title">E2B IDE Command</div>
+        <div class="badge">Groq → E2B</div>
+      </header>
+      <div class="workspace">
+        <div class="box">
+          <label>Prompt</label>
+          <textarea id="prompt">Generate a production-ready refactor of the scoreboard module with error handling.</textarea>
+          <label>Code override (optional)</label>
+          <textarea id="code">// Paste code override or leave blank to let Groq generate</textarea>
+          <div class="hint">
+            <span>Ctrl+Enter → Run</span>
+            <span>No scroll</span>
+            <span>Sandboxed</span>
+          </div>
+          <div class="actions">
+            <button id="runBtn">Run in E2B</button>
+          </div>
+        </div>
+        <div class="box">
+          <label>Terminal output</label>
+          <div class="terminal" id="terminal">
+            Ready. Press “Run in E2B” to execute the current prompt/code bundle. Outputs stream here.
+          </div>
+          <div class="hint">
+            <span>History preserved</span>
+            <span>Logs auto-capture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("runBtn").addEventListener("click", () => {
+      const prompt = document.getElementById("prompt").value.trim();
+      const code = document.getElementById("code").value.trim();
+      const terminal = document.getElementById("terminal");
+      const entry = document.createElement("p");
+      entry.textContent = `[${new Date().toLocaleTimeString()}] Running ${prompt ? "prompt" : "code"}${code ? " + override" : ""}`;
+      terminal.appendChild(entry);
+      terminal.scrollTop = terminal.scrollHeight;
+    });
+  </script>
+</body>
+</html>
