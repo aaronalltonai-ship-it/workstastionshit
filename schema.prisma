@@ -1,0 +1,81 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id        Int       @id @default(autoincrement())
+  name      String    @unique
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  products  Product[]
+}
+
+model Product {
+  id          Int       @id @default(autoincrement())
+  slug        String    @unique
+  name        String
+  description String
+  priceCents  Int
+  categoryId  Int
+  badge       String?
+  rating      Float
+  reviews     Int
+  colors      String
+  inventory   Int
+  accent      String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@index([categoryId, priceCents])
+}
+
+model Client {
+  id        Int        @id @default(autoincrement())
+  name      String
+  contact   String?
+  projects  Project[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+model Project {
+  id            Int        @id @default(autoincrement())
+  name          String
+  clientId      Int
+  status        String?
+  owner         String?
+  due           DateTime?
+  notes         String?
+  timeSpentMs   Int        @default(0)
+  runningStart  DateTime?
+  tasks         Task[]
+  client        Client     @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  @@index([clientId, status, due])
+}
+
+model Task {
+  id            Int        @id @default(autoincrement())
+  title         String
+  status        String?
+  due           DateTime?
+  owner         String?
+  prompt        String?
+  timeSpentMs   Int        @default(0)
+  runningStart  DateTime?
+  projectId     Int
+  project       Project    @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  @@index([projectId, status, due])
+}
